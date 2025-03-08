@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1;
+}
+
+.tasks{
+    justify-content: center;
+    margin: 5% auto;
+    width: 35em;
+    height: 40em;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.tasks .content input{
+    height: 3em;
+}
+
+.tasks .content #textTask{
+    width: 30em;
+}
+
+/* Task sections */
+
+.tasks .content h2{
+    background: rgba(128, 128, 128, 0.158);
+    width: 100%;
+    font-weight: 200;
+}
+.tasks .content h2 input{
+    background: red;
+    position: relative;
+    left: 15em;
+    width: 50px;
+}
+
+.content .taskSection{
+    display: flex;
+    flex-flow: row wrap;
+}
+.content .clearButton{
+    margin: auto;
+    display: flex;
+}
+
+
+h3 input{
+    position: relative;
+    left: 15em;;
+}
+
+
+.task{
+    cursor: grab;
+    user-select: none;
+    
+}
+
+.draggable.dragging{
+    cursor: grab;
+}
